@@ -33,12 +33,19 @@ public class RobotMap {
 
     // MOTORS
     // TODO: Update ports for PWM
+<<<<<<< HEAD
     public static int MOTOR_FRONT_LEFT = 0;
     public static int MOTOR_FRONT_RIGHT = 1;
     public static int MOTOR_REAR_LEFT = 2;
     public static int MOTOR_REAR_RIGHT = 3;
     public static int MOTOR_BALLSHOOTER_1 = 4;
     public static int MOTOR_BALLSHOOTER_2 = 5;
+=======
+    public static int MOTOR_FRONT_LEFT = 0; // Blue and red
+    public static int MOTOR_FRONT_RIGHT = 1; // Red and yellow
+    public static int MOTOR_REAR_LEFT = 2; // Black and Blue
+    public static int MOTOR_REAR_RIGHT = 3; //  Black and yellow
+>>>>>>> origin/master
 
     // PNEUMATICS
     public static int BALLSHOOTER_SOLENOID = 6;
