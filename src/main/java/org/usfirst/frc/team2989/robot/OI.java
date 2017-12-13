@@ -18,20 +18,23 @@ public class OI {
      *
      */
 
-    Joystick xboxController;
+    Joystick attackStick1;
+    Joystick attackStick2;
     Button aButton;
     Button bButton;
 
     public OI() { // TODO: Add command listener for shooter mechanism
         super();
-        xboxController = new Joystick(RobotMap.JOYSTICK_PORT);
-        aButton = new JoystickButton(xboxController, RobotMap.JOYSTICK_ABUTTON);
-        bButton = new JoystickButton(xboxController, RobotMap.JOYSTICK_BBUTTON);
+        attackStick1 = new Joystick(RobotMap.JOYSTICK_1_PORT);
+        attackStick2 = new Joystick(RobotMap.JOYSTICK_2_PORT);
+        aButton = new JoystickButton(attackStick1, RobotMap.JOYSTICK_1_ABUTTON);
+        bButton = new JoystickButton(attackStick1, RobotMap.JOYSTICK_1_BBUTTON);
         aButton.whileHeld(new ShootBallCommand());
         bButton.whileHeld(new PushBallCommand());
     }
 
-    public Joystick getXboxController() {
-        return xboxController;
+    public Joystick getAttackStick1() {
+        return attackStick1;
     }
+    public Joystick getAttackStick2() { return attackStick2; }
 }
