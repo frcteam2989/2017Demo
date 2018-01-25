@@ -1,9 +1,7 @@
 package org.usfirst.frc.team2989.robot.subsystems;
 
 import edu.wpi.first.wpilibj.RobotDrive;
-import edu.wpi.first.wpilibj.TalonSRX;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import org.usfirst.frc.team2989.robot.Robot;
 import org.usfirst.frc.team2989.robot.RobotMap;
 import org.usfirst.frc.team2989.robot.commands.TeleopDriveCommand;
 
@@ -12,7 +10,7 @@ public class DriveTrain extends Subsystem {
     /* DRIVETRAIN
      * (( Basic drivetrain subsystem ))
      *
-     * What it does:
+     * What it does:x
      *  - Used for controlling RobotDrive
      *  - Used by teleop drive and autonomous commands
      */
@@ -29,5 +27,9 @@ public class DriveTrain extends Subsystem {
 
     public void driveRobotArcade(double moveValue, double rotationValue) {
         driveTrain.arcadeDrive(moveValue, rotationValue);
+    }
+
+    public void driveRobotMecanum(double x, double y, double rotation) {
+        driveTrain.mecanumDrive_Cartesian(x, y, rotation, 0);
     }
 }

@@ -26,6 +26,7 @@ public class RobotMap {
     // Buttons
     public static int JOYSTICK_ABUTTON = 1;
     public static int JOYSTICK_BBUTTON = 2;
+    public static int JOYSTICK_XBUTTON = 3;
 
     // Triggers
     public static int JOYSTICK_TRIGGER_LEFT = 2;
@@ -33,19 +34,15 @@ public class RobotMap {
 
     // MOTORS
     // TODO: Update ports for PWM
-<<<<<<< HEAD
-    public static int MOTOR_FRONT_LEFT = 0;
-    public static int MOTOR_FRONT_RIGHT = 1;
-    public static int MOTOR_REAR_LEFT = 2;
-    public static int MOTOR_REAR_RIGHT = 3;
-    public static int MOTOR_BALLSHOOTER_1 = 4;
-    public static int MOTOR_BALLSHOOTER_2 = 5;
-=======
     public static int MOTOR_FRONT_LEFT = 0; // Blue and red
     public static int MOTOR_FRONT_RIGHT = 1; // Red and yellow
     public static int MOTOR_REAR_LEFT = 2; // Black and Blue
     public static int MOTOR_REAR_RIGHT = 3; //  Black and yellow
->>>>>>> origin/master
+    public static int MOTOR_BALLSHOOTER_1 = 4;
+    public static int MOTOR_BALLSHOOTER_2 = 5;
+    public static int MOTOR_CLIMB_1 = 6;
+    public static int MOTOR_CLIMB_2 = 7;
+    public static boolean MECANUM_WHEELS = true;
 
     // PNEUMATICS
     public static int BALLSHOOTER_SOLENOID = 6;

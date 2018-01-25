@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import org.usfirst.frc.team2989.robot.subsystems.BallShooter;
+import org.usfirst.frc.team2989.robot.subsystems.Climbing;
 import org.usfirst.frc.team2989.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team2989.robot.subsystems.Pneumatics;
 
@@ -13,6 +14,7 @@ public class Robot extends IterativeRobot {
     public static DriveTrain driveTrain;
     public static BallShooter shooter;
     public static Pneumatics pneumatics;
+    public static Climbing climbing;
     public static OI oi;
     private Command autonomousCommand;
 
@@ -33,6 +35,7 @@ public class Robot extends IterativeRobot {
         shooter = new BallShooter();
         driveTrain = new DriveTrain();
         pneumatics = new Pneumatics();
+        climbing = new Climbing();
         oi = new OI();
     }
 
